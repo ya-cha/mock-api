@@ -1,6 +1,6 @@
 <div class="container mx-auto">
 @foreach($endpoints as $endpoint)
-    <div class="flex py-3 border-b justify-between space-x-12">
+    <div class="flex flex-col md:flex-row py-3 border-b justify-between md:space-x-12 space-y-3">
         <dl class="flex-1">
             <dt class="font-bold text-gray-300 text-xs uppercase">Request</dt>
             <dd class="flex items-baseline space-x-3">
