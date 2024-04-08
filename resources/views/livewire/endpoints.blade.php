@@ -22,6 +22,7 @@
         </div>
     </div>
 @endforeach
+{{ $endpoints->links() }}
 </div>
 
 
