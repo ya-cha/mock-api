@@ -20,6 +20,9 @@
             <dt class="font-bold text-gray-300 text-xs uppercase mt-3">Body</dt>
             <dd class="max-h-32 font-mono text-sm overflow-hidden">{{ $endpoint->response_body }}</dd>
         </dl>
+        <div class="flex flex-col space-y-3">
+            <button wire:click="delete({{ $endpoint->id }})" wire:confirm="Are you sure?" class="bg-red-500 text-white px-4 py-2 rounded">Delete</button>
+        </div>
     </div>
 @endforeach
 {{ $endpoints->links() }}

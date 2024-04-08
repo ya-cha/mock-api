@@ -15,4 +15,9 @@ class Endpoints extends Component
 
         return view('livewire.endpoints', compact('endpoints'));
     }
+
+    public function delete($id)
+    {
+        \App\Models\Endpoint::find($id)->delete();
+    }
 }
