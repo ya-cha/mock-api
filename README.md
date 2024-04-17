@@ -24,7 +24,7 @@ $ ping host.docker.internal
 Add this IP to your domain in the `/etc/hosts` file:
 
 ```bash
-$ echo "192.168.65.254 mock-api.test" >> /etc/hosts
+$ echo "192.168.1.1 mock-api.test" >> /etc/hosts
 ```
 
 Now you can reach the API from your docker container with `mock-api.test`.
