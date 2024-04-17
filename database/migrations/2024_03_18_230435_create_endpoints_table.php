@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('request_uri');
             $table->unsignedSmallInteger('response_status_code');
             $table->json('response_headers');
-            $table->json('response_body');
+            $table->text('response_body');
             $table->timestamps();
 
             $table->unique(['request_method', 'request_uri']);
