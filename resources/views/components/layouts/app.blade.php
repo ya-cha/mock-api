@@ -8,8 +8,8 @@
         <title>{{ $title ?? config('app.name') }}</title>
     </head>
     <body>
-        <div class="my-6 border-b">
-            <h1 class="my-6 text-center text-4xl font-bold">MOCK API</h1>
+        <div class="my-6 border-b border-teal-600">
+            <h1 class="my-6 text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-lime-600 to-teal-600">{{ config('app.name') }}</h1>
         </div>
 
         {{ $slot }}
