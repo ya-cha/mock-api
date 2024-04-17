@@ -21,6 +21,7 @@
             <dd class="max-h-32 font-mono text-sm overflow-hidden">{{ $endpoint->response_body }}</dd>
         </dl>
         <div class="flex flex-col space-y-3">
+            <button wire:click="$dispatch('openModal', {component: 'edit-endpoint', arguments: {endpoint: {{ $endpoint->id }} }})" class="bg-blue-500 text-white px-4 py-2 rounded">Edit</button>
             <button wire:click="delete({{ $endpoint->id }})" wire:confirm="Are you sure?" class="bg-red-500 text-white px-4 py-2 rounded">Delete</button>
         </div>
     </div>
